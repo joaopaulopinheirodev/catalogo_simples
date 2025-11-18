@@ -42,7 +42,7 @@ $result = $stmt->get_result();
       <td>R$ <?php echo number_format($row['preco'], 2, ',', '.'); ?></td>
       <td><?php echo $row['criado_em']; ?></td>
       <td class="actions">
-        <a class="edit" href="cadastro.php?id=<?php echo $row['id']; ?>">Editar</a>
+        <a class="edit" href="editar.php?id=<?php echo $row['id']; ?>">Editar</a>
         <a class="del" href="excluir.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Confirmar exclusão deste produto?')">Excluir</a>
       </td>
     </tr>
@@ -52,3 +52,4 @@ $result = $stmt->get_result();
 </div>
 
 <?php require 'inc/footer.php'; ?>
+
